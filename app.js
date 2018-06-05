@@ -25,11 +25,11 @@ app.use((req, res, next) => {
 });
 
 // Uncomment this section to quit the maintenance page
-// app.use((req, res, next) => {
-// 	res.render('maintenance.hbs', {
+app.use((req, res, next) => {
+	res.render('maintenance.hbs', {
 
-// 	});
-// });
+	});
+});
 
 app.use(express.static(__dirname + '/public'));
 
